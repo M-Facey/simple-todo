@@ -18,7 +18,6 @@ const Register = ()=> {
             <div className="register-left"></div>
             <div className="register-right">
                 <h1>Register</h1>
-                <div>{error}</div>
                 <div className="input-fields">
                     <input type='text'placeholder="Email" value={email} onChange={e => setEmail(e.target.value)}/>
                     <FontAwesomeIcon icon={faEnvelope} />
