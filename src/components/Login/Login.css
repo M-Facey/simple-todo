@@ -1,0 +1,99 @@
+@font-face {
+    font-family: brush;
+    src: url('../../fonts/Kashima\ Demo.otf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&Raleway&Do+Hyeon&display=swap');
+
+.login-container {
+    width: 700px;
+    height: 500px;
+    background-color: rgb(240, 240, 240);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.login-left {
+    width: 50%;
+    height: 100%;
+}
+
+.login-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.login-right h1,
+.register-right h1
+ {
+    width: 90%;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    font-size: 50px;
+}
+
+.login-right input {
+    width: calc(100% - 40px);
+    height: 40px;
+    text-indent:45px;
+    margin-top: 20px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    background-color: #cccccc;
+}
+
+.input-fields {
+    position: relative;
+}
+
+.input-fields svg {
+    position: absolute;
+    color: rgb(102, 102, 102);
+    top: 52%;
+    left: 15px;
+}
+
+.login-right input:focus, 
+.login-right input:focus + svg,
+.register-right input:focus, 
+.register-right input:focus + svg {
+    color: #d857b1;
+}
+
+.login-right span,
+.register-right span {
+   position: absolute;
+   bottom: 10px;
+   width: 90%;
+   text-align: center;
+   font-family: 'Comfortaa', cursive;
+}
+
+.login-right input[type="submit"],
+.register-right input[type="submit"] {
+    border: none;
+    height: 40px;
+    text-indent: 0px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    color: white;
+    background-color: #eb55be;
+}
+
+.login-right input[type="submit"]:focus,
+.register-right input[type="submit"]:focus {
+    color: white;
+}
