@@ -9,8 +9,6 @@ const Register = ()=> {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [email, setEmail] = useState('');
-    const [error, setError] = useState('');
-
     const register = () => {
         axios.post('http://localhost:8000/user/register', {username, password, email})
         .then(res => console.log(res)).catch((err) => console.log(err));
