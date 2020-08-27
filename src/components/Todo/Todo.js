@@ -6,7 +6,7 @@ import { faTrash, faEdit, faCheck } from '@fortawesome/free-solid-svg-icons';
 import './Todo.css';
 
 const Todo = () => {
-	const localhost = 'http://localhost:8000/todo/';
+	const localhost = 'https://simple-todo-mx.herokuapp.com/todo/';
 	const [todos, setTodos] = useState([]);
   const [text, setText] = useState("");
   

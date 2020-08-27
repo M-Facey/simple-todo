@@ -10,7 +10,7 @@ const Register = ()=> {
     const [password, setPassword] = useState('');
     const [email, setEmail] = useState('');
     const register = () => {
-        axios.post('http://localhost:8000/user/register', {username, password, email})
+        axios.post('https://simple-todo-mx.herokuapp.com/user/register', {username, password, email})
         .then(res => console.log(res)).catch((err) => console.log(err));
     }
     return (

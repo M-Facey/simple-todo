@@ -12,7 +12,7 @@ const Login = ({ history }) => {
 
     function login() {
         console.log(username + " " + password);
-        axios.post('http://localhost:8000/user/login', {
+        axios.post('https://simple-todo-mx.herokuapp.com/user/login', {
             username,
             password
         }).then(response => {
